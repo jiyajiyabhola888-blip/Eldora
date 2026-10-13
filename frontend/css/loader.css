@@ -1,0 +1,229 @@
+/* =========================
+        ELDORA LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#07142b;
+    transition:opacity .8s ease, visibility .8s ease;
+}
+
+.loader-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#2563eb33,transparent 55%),
+    radial-gradient(circle at bottom,#60a5fa22,transparent 60%),
+    #07142b;
+}
+
+.loader-content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.logo-box{
+
+    width:140px;
+    height:140px;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo-core{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    box-shadow:
+    0 0 30px rgba(37,99,235,.5);
+
+    animation:pulse 2s infinite;
+
+}
+
+.ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    border:3px solid rgba(255,255,255,.15);
+
+}
+
+.ring1{
+
+    width:120px;
+    height:120px;
+
+    animation:rotate 6s linear infinite;
+
+}
+
+.ring2{
+
+    width:150px;
+    height:150px;
+
+    border-color:#60a5fa55;
+
+    animation:rotateReverse 8s linear infinite;
+
+}
+.brand{
+
+    margin-top:30px;
+
+    color:white;
+
+    font-size:56px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+}
+
+.brand span{
+
+    color:#60a5fa;
+
+}
+
+.welcome{
+
+    margin-top:15px;
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+.subtitle{
+
+    color:#b8d6ff;
+
+    margin-top:8px;
+
+}
+.brand{
+
+    margin-top:30px;
+
+    color:white;
+
+    font-size:56px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+}
+
+.brand span{
+
+    color:#60a5fa;
+
+}
+
+.welcome{
+
+    margin-top:15px;
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+.subtitle{
+
+    color:#b8d6ff;
+
+    margin-top:8px;
+
+}
+/* ==========================
+      ANIMATIONS
+========================== */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes rotate{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes rotateReverse{
+
+from{
+transform:rotate(360deg);
+}
+
+to{
+transform:rotate(0deg);
+}
+}
+/* ==========================
+      EXIT EFFECT
+========================== */
+
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}

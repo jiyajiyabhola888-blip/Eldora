@@ -1,0 +1,43 @@
+.profile{
+    padding:80px 20px;
+    background:#f5f8ff;
+    min-height:100vh;
+}
+
+.profile-card{
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:4px solid #4CAF50;
+}
+
+.profile-card h2{
+    margin-bottom:25px;
+    color:#333;
+}
+
+.profile-card input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.profile-card .book-btn{
+    width:100%;
+    margin-top:20px;
+}

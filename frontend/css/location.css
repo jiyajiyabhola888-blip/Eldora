@@ -1,0 +1,69 @@
+.location-section{
+    min-height:100vh;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.location-card{
+    width:100%;
+    max-width:650px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.location-card h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+
+.location-card p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.location-card select,
+.location-card input,
+.location-card textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.location-card select:focus,
+.location-card input:focus,
+.location-card textarea:focus{
+    border-color:#2563eb;
+}
+
+.location-btn{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#0ea5e9;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.location-btn:hover{
+    background:#0284c7;
+}
+
+.book-btn{
+    width:100%;
+    margin-top:20px;
+}

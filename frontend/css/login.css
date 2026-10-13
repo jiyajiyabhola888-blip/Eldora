@@ -1,0 +1,393 @@
+/* =========================================
+            LOGIN PAGE
+========================================= */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ================= LEFT SIDE ================= */
+
+.login-left{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:#fff;
+
+    padding:80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.brand h1{
+
+    font-size:52px;
+
+    margin-bottom:10px;
+
+}
+
+.brand span{
+
+    color:#fde047;
+
+}
+
+.brand p{
+
+    opacity:.9;
+
+    margin-bottom:70px;
+
+}
+
+.welcome-text h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.welcome-text p{
+
+    line-height:32px;
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+.back-home{
+
+    margin-top:60px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#fff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.login-right{
+
+    background:#f8fbff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+}
+
+/* ================= CARD ================= */
+
+.login-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:34px;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    margin-bottom:35px;
+
+}
+
+/* ================= INPUT ================= */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:16px 50px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.input-box input:focus{
+
+    border-color:#2563eb;
+
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#6b7280;
+
+}
+
+#togglePassword{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#6b7280;
+
+}
+
+/* ================= OPTIONS ================= */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.login-options a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+}
+
+/* ================= BUTTON ================= */
+
+.login-card button[type="submit"]{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-card button[type="submit"]:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ================= DIVIDER ================= */
+
+.divider{
+
+    text-align:center;
+
+    margin:28px 0;
+
+    color:#9ca3af;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+/* ================= SOCIAL ================= */
+
+.social-login{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social-login button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.social-login button:hover{
+
+    background:#f3f4f6;
+
+}
+
+/* ================= REGISTER ================= */
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.register-link a{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.login-page{
+
+grid-template-columns:1fr;
+
+}
+
+.login-left{
+
+display:none;
+
+}
+
+.login-right{
+
+padding:30px;
+
+}
+
+}

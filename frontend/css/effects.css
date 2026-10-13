@@ -1,0 +1,113 @@
+/* ===========================
+        LOADER
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:8px solid #dbeafe;
+
+    border-top:8px solid #2563eb;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+/* ===========================
+      TOP BUTTON
+=========================== */
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* ===========================
+      SCROLL BAR
+=========================== */
+
+#progressBar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0%;
+
+    height:5px;
+
+    background:#2563eb;
+
+    z-index:999999;
+
+}

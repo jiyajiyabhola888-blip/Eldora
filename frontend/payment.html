@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment | CareNest</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>CareNest</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="caretaker.html">Caretakers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="register.html" class="register-btn">Register</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- PAYMENT HERO -->
+
+<section class="booking-hero">
+
+<div class="container">
+
+<h1>Secure Payment</h1>
+
+<p>
+
+Complete your booking using our secure payment gateway.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="booking-section">
+
+<div class="container">
+
+<div class="booking-form">
+
+<h2>Select Payment Method</h2>
+
+<form id="paymentForm">
+
+<div class="payment-option">
+
+<label>
+
+<input type="radio" name="payment" checked>
+
+💳 Debit / Credit Card
+
+</label>
+
+</div>
+
+<div class="payment-option">
+
+<label>
+
+<input type="radio" name="payment">
+
+📱 UPI Payment
+
+</label>
+
+</div>
+
+<div class="payment-option">
+
+<label>
+
+<input type="radio" name="payment">
+
+🏦 Net Banking
+
+</label>
+
+</div>
+
+<div class="payment-option">
+
+<label>
+
+<input type="radio" name="payment">
+
+👛 Wallet
+
+</label>
+
+</div>
+
+<div class="payment-option">
+
+<label>
+
+<input type="radio" name="payment">
+
+💵 Cash After Verification
+
+</label>
+
+</div>
+
+<h3>Card Details</h3>
+
+<input type="text" placeholder="Card Holder Name">
+
+<input type="text" placeholder="Card Number">
+
+<div class="booking-row">
+
+<input type="text" placeholder="MM / YY">
+
+<input type="password" placeholder="CVV">
+
+</div>
+<h3>Booking Summary</h3>
+
+<div class="summary-card">
+
+<div class="summary-item">
+<span>Selected Service</span>
+<strong>Home Care</strong>
+</div>
+
+<div class="summary-item">
+<span>Duration</span>
+<strong>4 Hours</strong>
+</div>
+
+<div class="summary-item">
+<span>Caretaker</span>
+<strong>Priya Sharma</strong>
+</div>
+
+<div class="summary-item">
+<span>GST</span>
+<strong>₹49</strong>
+</div>
+
+<div class="summary-item">
+<span>Platform Fee</span>
+<strong>₹30</strong>
+</div>
+
+<div class="summary-item total">
+<span>Grand Total</span>
+<strong>₹578</strong>
+</div>
+
+</div>
+
+<h3>UPI Payment</h3>
+
+<img src="images/qr.png"
+class="payment-qr"
+alt="QR Code">
+
+<input
+type="text"
+placeholder="Enter UPI ID (optional)">
+
+<div class="payment-security">
+
+<p>🔒 256-bit SSL Encrypted</p>
+
+<p>✔ Secure Payment Gateway</p>
+
+<p>✔ PCI DSS Certified</p>
+
+</div>
+
+<button
+type="submit"
+class="book-btn">
+
+Proceed Payment
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="paymentSuccess"
+class="success-popup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Payment Successful 🎉</h2>
+
+<p>
+
+Your booking has been confirmed successfully.
+
+</p>
+
+<p>
+
+Booking ID :
+<strong>#CN2026001</strong>
+
+</p>
+
+<button id="goDashboard">
+
+Go to Dashboard
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<script src="js/payment.js"></script>
+
+</body>
+
+</html>

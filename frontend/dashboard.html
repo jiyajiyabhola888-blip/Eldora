@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | CareNest</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-heart-pulse"></i>
+<h2>CareNest</h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="caretaker.html">Caretakers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="register.html" class="register-btn">Register</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+<div class="container">
+
+<h1>Welcome to CareNest Dashboard 👋</h1>
+
+<p>Manage your bookings, profile and services from one place.</p>
+
+<div class="dashboard-stats">
+
+    <div class="stat-card">
+        <h2 id="totalBookings">1</h2>
+        <p>Total Bookings</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="activeBookings">1</h2>
+        <p>Active Booking</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="completedBookings">0</h2>
+        <p>Completed</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>⭐ 4.9</h2>
+        <p>Your Rating</p>
+    </div>
+
+</div>
+<div class="dashboard-cards">
+
+<a href="my-bookings.html" class="dashboard-card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h3>My Bookings</h3>
+
+<p>View and manage all your bookings.</p>
+
+</a>
+<a href="profile.html" class="dashboard-card">
+    <i class="fa-solid fa-user"></i>
+    <h3>Profile</h3>
+    <p>Update your personal information.</p>
+</a>
+
+<a href="caretaker.html" class="dashboard-card">
+<i class="fa-solid fa-user-nurse"></i>
+<h3>Find Caretakers</h3>
+<p>Browse verified specialists & AI matching.</p>
+</a>
+
+<a href="booking.html" class="dashboard-card">
+<i class="fa-solid fa-calendar-plus"></i>
+<h3>Book Service</h3>
+<p>Hourly & daily care companion shifts.</p>
+</a>
+
+</div>
+
+<!-- Recent Booking -->
+
+<div class="recent-booking">
+
+<h2>Recent Booking</h2>
+
+<div class="booking-info">
+<p><strong>🏠 Service:</strong> <span id="dashService">Loading recent booking...</span></p>
+</div>
+
+</div>
+
+<div class="dashboard-actions" style="margin-top: 30px; display: flex; gap: 15px; justify-content: flex-end;">
+
+<a href="booking.html" class="book-btn" style="text-decoration:none;">
+    <i class="fa-solid fa-plus"></i> New Booking
+</a>
+
+<button id="logoutBtn" class="book-btn" style="background:#e2e8f0; color:#334155; border:none; cursor:pointer;">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/api.js"></script>
+<script src="js/sos.js"></script>
+<script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
+<script>
+document.getElementById("logoutBtn").addEventListener("click", () => {
+    logout();
+});
+</script>
+</body>
+
+</html>

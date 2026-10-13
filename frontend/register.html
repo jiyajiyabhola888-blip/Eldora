@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register | CareNest</title>
+
+<link rel="stylesheet" href="css/auth.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- Left -->
+
+    <div class="left-panel">
+
+        <div class="overlay">
+
+            <h1>Join CareNest ❤️</h1>
+
+            <p>
+                Create your account and start booking trusted
+                caretakers for your loved ones.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right -->
+
+    <div class="right-panel">
+
+       <form id="registerForm" class="login-form">
+            <h2>Create Account</h2>
+
+            <p class="subtitle">
+                Register to continue
+            </p>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+              <input
+id="registerName"
+type="text"
+placeholder="Full Name"
+required>
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                id="registerEmail"
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                id="registerPhone"
+                type="tel"
+                placeholder="Mobile Number"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-users"></i>
+
+                <select required>
+
+                    <option value="">
+                        Select User Type
+                    </option>
+
+                    <option>
+                        Family
+                    </option>
+
+                    <option>
+                        Caretaker
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+               id="registerPassword"
+                type="password"
+                placeholder="Password"
+                required>
+
+                <i
+                id="toggleRegPassword"
+                class="fa-solid fa-eye toggle-password"></i>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                id="confirmPassword"
+                type="password"
+                placeholder="Confirm Password"
+                required>
+
+                <i
+                id="toggleConfirmPassword"
+                class="fa-solid fa-eye toggle-password"></i>
+
+            </div>
+
+            <button class="login-btn">
+
+                Create Account
+
+            </button>
+
+            <p class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

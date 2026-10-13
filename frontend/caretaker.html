@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caretakers | CareNest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/caretaker_old.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-heart-pulse"></i>
+<h2>CareNest</h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="caretaker.html">Caretakers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons" id="navButtons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="register.html" class="register-btn">Register</a>
+
+</div>
+
+</nav>
+
+</header>
+    <!-- ================= HERO ================= -->
+
+    <section class="caretaker-hero">
+
+        <div class="container">
+
+            <h1>Find Trusted Caretakers</h1>
+
+            <p>
+                Verified professionals for elderly care, hospital support,
+                travel assistance, nursing, and home companionship.
+            </p>
+
+            <div style="margin-top: 25px;">
+                <button id="openAIMatcherBtn" style="background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; border: none; padding: 12px 26px; border-radius: 30px; font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 8px 25px rgba(37,99,235,0.35);">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Try AI Care Companion Matcher
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="caretaker-search">
+
+        <div class="container" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name, skill, or condition..."
+                style="flex: 1; max-width: 450px; min-width: 250px;">
+
+            <select id="serviceFilter" style="min-width: 200px;">
+
+                <option value="all">All Services</option>
+
+                <option value="home">Home Care</option>
+
+                <option value="hospital">Hospital Care</option>
+
+                <option value="travel">Travel Companion</option>
+
+                <option value="medical">Medical Support</option>
+
+                <option value="nursing">Nursing Care</option>
+
+                <option value="event">Event Companion</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CARETAKER LIST ================= -->
+
+    <section class="caretaker-list">
+
+        <div class="container">
+
+            <div class="caretaker-grid" id="caretakerGrid">
+
+                <!-- CARD 1 -->
+
+                <div class="caretaker-card" data-service="home">
+
+                    <div class="avatar">
+
+                        <i class="fa-solid fa-user-nurse"></i>
+
+                    </div>
+
+                    <span class="verified">
+
+                        ✔ Verified
+
+                    </span>
+
+                    <h3>Priya Sharma</h3>
+
+                    <p class="role">
+
+                        Home Care Specialist
+
+                    </p>
+
+                    <div class="info">
+
+                        ⭐ 4.9 Rating
+
+                        <br>
+
+                        🩺 6 Years Experience
+
+                        <br>
+
+                        🌐 Hindi • English
+
+                        <br>
+
+                        💰 ₹499 / Visit
+
+                    </div>
+
+                    <a href="booking.html" class="book-btn">
+
+                        Book Now
+
+                    </a>
+
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="caretaker-card" data-service="hospital">
+
+                    <div class="avatar">
+
+                        <i class="fa-solid fa-user-doctor"></i>
+
+                    </div>
+
+                    <span class="verified">
+
+                        ✔ Verified
+
+                    </span>
+
+                    <h3>Rahul Verma</h3>
+
+                    <p class="role">
+
+                        Hospital Care Expert
+
+                    </p>
+
+                    <div class="info">
+
+                        ⭐ 4.8 Rating
+
+                        <br>
+
+                        🩺 5 Years Experience
+
+                        <br>
+
+                        🌐 Hindi • English
+
+                        <br>
+
+                        💰 ₹599 / Visit
+
+                    </div>
+
+                    <a href="booking.html" class="book-btn">
+
+                        Book Now
+
+                    </a>
+
+                </div>
+
+                <!-- CARD 3 -->
+
+                <div class="caretaker-card" data-service="travel">
+
+                    <div class="avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <span class="verified">
+
+                        ✔ Verified
+
+                    </span>
+
+                    <h3>Anjali Singh</h3>
+
+                    <p class="role">
+
+                        Travel Companion
+
+                    </p>
+
+                    <div class="info">
+
+                        ⭐ 5.0 Rating
+
+                        <br>
+
+                        🩺 7 Years Experience
+
+                        <br>
+
+                        🌐 Hindi • English
+
+                        <br>
+
+                        💰 ₹699 / Visit
+
+                    </div>
+
+                    <a href="booking.html" class="book-btn">
+
+                        Book Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= BECOME A CARETAKER ================= -->
+
+<section class="become-caretaker">
+
+    <div class="container">
+
+        <h2>Want to Become a Caretaker?</h2>
+
+        <p>
+            Join CareNest and provide trusted, compassionate care
+            to elders and families.
+        </p>
+
+        <a href="caretaker-register.html" class="book-btn">
+            Become a Caretaker
+        </a>
+
+    </div>
+
+</section>
+    <footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-logo">
+
+            <h2>Care<span>Nest</span></h2>
+
+            <p>
+                AI-powered elder care platform connecting families with trusted,
+                verified and compassionate caregivers across India.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3>Company</h3>
+
+            <ul>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="caretaker.html">Caretakers</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Support</h3>
+
+            <ul>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">FAQs</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li>📍 Chandigarh, India</li>
+
+                <li>📞 +91 9876543210</li>
+
+                <li>✉ support@carenest.ai</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 CareNest. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/sos.js"></script>
+<script src="js/script.js"></script>
+<script src="js/caretaker.js"></script>
+</body>
+
+</html>

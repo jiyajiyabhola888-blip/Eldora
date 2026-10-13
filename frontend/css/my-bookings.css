@@ -1,0 +1,132 @@
+/* ===========================
+      MY BOOKINGS
+=========================== */
+
+.my-bookings{
+    margin-top:90px;
+    padding:80px 8%;
+    background:#f8fbff;
+    min-height:100vh;
+}
+
+.my-bookings h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.my-bookings p{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:40px;
+}
+
+.booking-card{
+
+    background:#fff;
+    max-width:700px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.booking-card h3{
+
+    color:#2563eb;
+    margin-bottom:20px;
+
+}
+
+.booking-card p{
+
+    text-align:left;
+    margin:12px 0;
+    color:#334155;
+
+}
+
+.status{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#dcfce7;
+    color:#15803d;
+    font-weight:600;
+
+}
+
+.booking-buttons{
+
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+
+}
+
+.booking-buttons button{
+
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.view-btn{
+
+    background:#2563eb;
+    color:#fff;
+
+}
+
+.view-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.cancel-btn{
+
+    background:#ef4444;
+    color:#fff;
+
+}
+
+.cancel-btn:hover{
+
+    background:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+.booking-card{
+
+    padding:20px;
+
+}
+
+.booking-buttons{
+
+    flex-direction:column;
+
+}
+
+}
+.status{
+    display:inline-block;
+    padding:8px 15px;
+    background:#d4edda;
+    color:#155724;
+    border-radius:20px;
+    font-weight:600;
+}

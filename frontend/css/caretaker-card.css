@@ -1,0 +1,127 @@
+.featured-caretakers{
+    padding:80px 8%;
+    background:#f7fbff;
+}
+
+.search-area{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.search-area input,
+.search-area select{
+    padding:14px 18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-area button{
+    padding:14px 30px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.caretaker-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.caretaker-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.caretaker-card{
+    background:#fff;
+    border-radius:25px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.caretaker-card h3{
+    font-size:22px;
+    margin-top:15px;
+}
+
+.caretaker-card p{
+    font-size:14px;
+    line-height:22px;
+}
+
+.card-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:25px;
+}
+
+.card-buttons button{
+    flex:1;
+}
+.card-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+.card-buttons button{
+    flex:1;
+    height:46px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-btn{
+    background:#fff;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.profile-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.book-btn-card{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+}
+
+.book-btn-card:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.verified-badge{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:#16a34a;
+    color:#fff;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.verified-badge i{
+    color:#fff;   /* Tick white rahega */
+    font-size:14px;
+}

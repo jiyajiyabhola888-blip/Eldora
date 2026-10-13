@@ -1,0 +1,47 @@
+.faq{
+
+padding:100px 8%;
+
+}
+
+.faq-box{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.faq details{
+
+background:#fff;
+
+margin-bottom:20px;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.faq summary{
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+.faq p{
+
+margin-top:15px;
+
+color:#666;
+
+line-height:28px;
+
+}

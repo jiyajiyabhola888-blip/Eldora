@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Location | CareNest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/location.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-heart-pulse"></i>
+<h2>CareNest</h2>
+</div>
+
+<ul class="nav-links">
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="profile.html">Profile</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="location-section">
+
+<div class="container">
+
+<div class="location-card">
+
+<h1>📍 Select Your Location</h1>
+
+<p>
+Choose your location to find nearby verified caretakers.
+</p>
+
+<form id="locationForm">
+
+<select id="country" required>
+<option value="">Select Country</option>
+</select>
+
+<select id="state" required>
+<option value="">Select State / Province</option>
+</select>
+
+<select id="city" required>
+<option value="">Select City</option>
+</select>
+
+<input type="text"
+id="postalCode"
+placeholder="ZIP / Postal Code">
+
+<textarea
+id="address"
+rows="4"
+placeholder="Full Address"></textarea>
+
+<button
+type="button"
+id="currentLocation"
+class="location-btn">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+Use Current Location
+
+</button>
+
+<button
+type="submit"
+class="book-btn">
+
+Continue
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/location.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | CareNest</title>
+
+<link rel="stylesheet" href="css/auth.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- Left Side -->
+
+    <div class="left-panel">
+
+        <div class="overlay">
+
+            <h1>Welcome Back 👋</h1>
+
+            <p>
+                Login to access your CareNest dashboard,
+                manage bookings and take care of your loved ones.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right-panel">
+
+       <form id="loginForm" class="login-form">
+
+            <h2>Login</h2>
+
+            <p class="subtitle">
+                Sign in to continue
+            </p>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+             <input
+id="loginEmail"
+type="email"
+placeholder="Email Address"
+required
+>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    id="loginPassword"
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+              <i
+class="fa-solid fa-eye togglePassword"
+data-target="loginPassword">
+</i>
+            </div>
+
+            <div class="options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember Me
+
+                </label>
+
+                <a href="forgot-password.html">
+                    Forgot Password?
+
+                </a>
+
+            </div>
+        <button type="submit" class="login-btn">
+                Login
+</button>
+
+            <div class="divider">
+
+                OR
+
+            </div>
+
+            <button
+            type="button"
+            class="google-btn">
+
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+            <p class="register-link">
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Register
+
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Care Service | CareNest</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>CareNest</h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="caretaker.html">Caretakers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="register.html" class="register-btn">Register</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="booking-hero">
+
+<div class="container">
+
+<h1>Book a Care Companion</h1>
+
+<p>
+Choose your preferred service and submit your booking request.
+</p>
+
+</div>
+
+</section>
+
+<section class="booking-section">
+
+<div class="container">
+
+<div class="booking-form">
+
+<h2>Book Your Service</h2>
+
+<form id="bookingForm">
+
+<select id="service" required>
+
+<option value="Home Care">Home Care</option>
+
+<option value="Hospital Care">Hospital Care</option>
+
+<option value="Travel Companion">Travel Companion</option>
+
+<option value="Event Companion">Event Companion</option>
+
+<option value="Emergency Care">Emergency Care</option>
+
+<option value="Nursing Care">Nursing Care</option>
+
+<option value="Medical Support">Medical Support</option>
+
+<option value="Daily Assistance">Daily Assistance</option>
+
+</select>
+
+<input type="text" id="bookingFullName" placeholder="Your Full Name" required>
+
+<input type="email" id="bookingEmail" placeholder="Email Address" required>
+
+<input type="tel" id="bookingPhone" placeholder="Phone Number" required>
+
+<div class="booking-row">
+
+<input type="date" id="bookingDate" required>
+
+<input type="time" id="bookingTime" value="09:00" required>
+
+</div>
+
+<div class="booking-row">
+
+<select id="durationType" required>
+
+<option value="Hours">Hours (Min 4)</option>
+
+<option value="Days">Days</option>
+
+<option value="Months">Months</option>
+
+<option value="Years">Years</option>
+
+</select>
+
+<input
+type="number"
+id="durationValue"
+placeholder="Hours (Min 4)"
+min="4"
+value="4"
+required>
+
+</div>
+
+<h3>Elder Details</h3>
+
+<input type="text" id="elderName" placeholder="Elder Full Name" required>
+
+<div class="booking-row">
+
+<input type="number" id="elderAge" placeholder="Age" value="70" required>
+
+<select id="elderGender" required>
+
+<option value="Senior">Gender / Category</option>
+
+<option value="Male">Male</option>
+
+<option value="Female">Female</option>
+
+<option value="Other">Other</option>
+
+</select>
+
+</div>
+
+<div class="booking-row">
+
+<input type="number" id="elderWeight" placeholder="Weight (kg)">
+
+<input type="text" id="elderBloodGroup" placeholder="Blood Group">
+
+</div>
+
+<h3>Medical Conditions</h3>
+
+<div class="medical-grid">
+
+<label><input type="checkbox"> Diabetes</label>
+
+<label><input type="checkbox"> High BP</label>
+
+<label><input type="checkbox"> Dementia</label>
+
+<label><input type="checkbox"> Alzheimer's</label>
+
+<label><input type="checkbox"> Parkinson's</label>
+
+<label><input type="checkbox"> Stroke</label>
+
+<label><input type="checkbox"> Wheelchair Support</label>
+
+<label><input type="checkbox"> Bedridden</label>
+
+<label><input type="checkbox"> Other</label>
+
+</div>
+
+<textarea id="medicineDetails" rows="4"
+placeholder="Medicine Details (Name + Timing)">
+</textarea>
+
+<textarea id="allergyDetails" rows="3"
+placeholder="Allergies (if any)">
+</textarea>
+<h3>Address Details</h3>
+
+<input type="text" id="elderHouse" placeholder="House No / Flat No" required>
+
+<input type="text" id="elderStreet" placeholder="Street / Area" required>
+
+<input type="text" id="elderLandmark" placeholder="Landmark">
+
+<div class="booking-row">
+
+<input type="text" id="elderCity" placeholder="City" value="Chandigarh" required>
+
+<input type="text" id="elderState" placeholder="State" value="Punjab" required>
+
+</div>
+
+<div class="booking-row">
+
+<input type="text" id="elderPin" placeholder="PIN Code" value="160017" required>
+
+<select required>
+
+<option value="India">India</option>
+
+</select>
+
+</div>
+
+<h3>Emergency Contact</h3>
+
+<input type="text" id="emergencyName" placeholder="Emergency Contact Name" required>
+
+<div class="booking-row">
+
+<input type="text" id="emergencyRelation" placeholder="Relation (e.g. Son / Daughter)" required>
+
+<input type="tel" id="emergencyPhone" placeholder="Emergency Phone Number" required>
+
+</div>
+
+<h3>Special Instructions</h3>
+
+<textarea id="specialInstructions" rows="4" placeholder="Any special care instructions for the assigned caretaker"></textarea>
+
+<button type="submit" class="book-btn" style="width: 100%; margin-top: 20px; font-size: 16px; padding: 14px;">
+Confirm & Book Care Companion
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="booking-summary">
+
+<div class="container">
+
+<div class="summary-card">
+
+<h2>Booking Summary</h2>
+
+<div class="selected-caretaker">
+
+<div style="width: 55px; height: 55px; border-radius: 50%; background: #e0e7ff; color: #3730a3; display: flex; align-items: center; justify-content: center; font-size: 24px;">
+    <i class="fa-solid fa-user-nurse"></i>
+</div>
+
+<div>
+
+<h3 id="summaryCaretakerName">Best Match Assigned</h3>
+
+<p>⭐ 4.9 | Verified Professional</p>
+
+<span>✔ Verified Care Companion</span>
+
+</div>
+
+</div>
+
+<div class="summary-item">
+
+<span>Selected Service</span>
+
+<strong id="selectedService">Home Care</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>Duration</span>
+
+<strong id="selectedDuration">4 Hours</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>Minimum Shift Rule</span>
+
+<strong style="color: #15803d;">✔ Minimum 4h Satisfied</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>GST (18%)</span>
+
+<strong id="summaryGst">₹49</strong>
+
+</div>
+
+<div class="summary-item">
+
+<span>Platform Fee</span>
+
+<strong id="summaryPlatformFee">₹30</strong>
+
+</div>
+
+<div class="summary-item total">
+
+<span>Grand Total</span>
+
+<strong id="totalPrice">₹578</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="successPopup" class="success-popup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Booking Successful 🎉</h2>
+
+<p>
+Thank you! Your booking request has been submitted successfully.
+</p>
+
+<button id="closePopup">
+View My Bookings
+</button>
+
+</div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/sos.js"></script>
+<script src="js/script.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>
